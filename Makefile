@@ -148,6 +148,9 @@ yt-dlp.tar.gz: all
 		setup.py setup.cfg yt-dlp yt_dlp requirements.txt \
 		devscripts test
 
+docker:
+	docker build -t yt-dlp .
+
 AUTHORS: .mailmap
 	git shortlog -s -n | cut -f2 | sort > AUTHORS
 
